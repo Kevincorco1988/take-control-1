@@ -1,0 +1,834 @@
+/*Sets the entire page to border box sizing */
+*{
+    box-sizing: border-box;
+}
+
+/*Sets the background colour and font family for the page body*/
+body {
+    background: linear-gradient(150deg, #156477, #4e085f);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*The container holding all the elements on the page*/
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+/*Styles the page logo*/
+.logo {
+    width: 15%;
+    height: auto;
+    margin-left: 50px;
+    border-radius: 15px;
+    border: solid black;
+}
+
+/*Styles the display for header elements in the page*/
+header {
+    display: flex;
+    margin: 10px 0 30px;
+    font-size: 2rem;
+    flex-wrap: wrap;
+}
+
+/*Styles the main page heading */
+header h1 {
+    margin-left: 20px;
+    color: #fff;
+}
+
+/*Styles the page navigation*/
+nav {
+    font-weight: bolder;
+    text-indent: 0.5em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+}
+
+/*Styles the page navigation links*/
+nav a {
+    color: black;
+    text-decoration: none;
+    background-color: #fff;
+    border: solid black;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+/*Styles the navigation when hovered over*/
+nav a:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+
+/*Styles the nav bar*/
+.navbar {
+    border: 5px solid white;
+    padding: 5px;
+}
+
+/*Styles the main section*/
+main {
+    padding-bottom: 100px;
+}
+
+/*H1 Heading styling*/
+.h1-home {
+    font-size: xx-large;
+    padding-top: 150px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+/*Home image styling*/
+.home-image {
+    width: 43%;
+    height: 315px;
+    float: right;
+    margin-right: 80px;
+    border-radius: 5px;
+}
+
+/*Youtube video styling*/
+.youtube-video {
+    margin-left: 50px;
+}
+
+/*Styles the my journey section*/
+#my-journey {
+    font-size: xx-large;
+    margin-top: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+/*Styles the advice section*/
+#advice {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    background: goldenrod;
+    color: #fff;
+    width: 30%;
+    height: 275px;
+    float: left;
+    margin-left: 100px;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+/*Styles this image*/
+#stressed-image {
+    width: 35%;
+    height: 275px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+/*Styles the quotes section*/
+.quotes {
+    margin-top: 70px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #fff;
+}
+
+/*Styles the quotes generator container */
+.random-quotes {
+    background: goldenrod;
+    border: 5px solid;
+    height: 275px;
+    width: 35%;
+    border-radius: 10px;
+    margin-left: 32%;
+    text-align: center;
+}
+
+/*Styles the quotes button*/
+#quote-btn {
+    margin: 10%;
+    height: 70px;
+    width: 25%;
+    color: #fff;
+    background-color: darkblue;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*Styles the quotes output area*/
+#quote-output {
+    margin: 15px auto;
+    background-color: #156477;
+    width: 80%;
+    height: 28%;
+    font-size: large;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Styles the h1 list heading*/
+.h1-list {
+    font-size: xx-large;
+    padding-top: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+/*Styles the make a list section*/
+#make-the-list {
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    margin-left: 35%;
+    border-radius: 10px;
+    background: goldenrod;
+    color: #fff;
+    font-size: x-large;
+    padding: 20px;
+}
+
+/*Styles the list output*/
+#make-the-list i {
+    color: black;
+}
+
+/*Styles the list box*/
+.to-do-list {
+    width: 50%;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 50px 40px 60px;
+    border-radius: 15px;
+}
+
+/*Styles the list heading*/
+.to-do-list h2 {
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: xx-large;
+}
+
+/*Styles the list icon */
+.to-do-list h2 i {
+    color: goldenrod;
+    margin-left: 10px;
+    width: 35px;
+}
+
+/*List rows*/
+.list-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darkgray;
+    border-radius: 30px;
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+
+/*List input*/
+#input-task {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: lightblue;
+    padding: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/*Styles the add task button*/
+.add-task-btn {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 16px 50px;
+    border-radius: 20px;
+    background: red;
+    color: #fff;
+}
+
+/*Styles the list areas*/
+#list-container li {
+    font-size: 15px;
+    padding: 12px 10px 12px 10px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    font-size: large;
+}
+
+#list-container li.completed-task {
+    color: red;
+    text-decoration: line-through;
+}
+
+#list-container li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    color:red;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#list-container li span:hover {
+    background: darkgrey;
+}
+
+
+/*Styles the image of the page*/
+.list-image img {
+    width: 50%;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 332px;
+}
+
+/*Styles the paragraph regarding contact*/
+.contact p {
+    font-size: xx-large;
+    color: #fff;
+    background: goldenrod;
+    text-align: center;
+    width: 30%;
+    height: 275px;
+    margin-left: 100px;
+    margin-top: 85px;
+    float: left;
+    padding: 10px;
+    border: solid black;
+    border-radius: 10px;
+}
+
+
+.contact p i {
+    color: darkblue;
+    margin-top: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+/*The image of the page*/
+#contact-image {
+    width: 35%;
+    height: 285px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+
+/*Styles the form heading and elements within*/
+#contact-me {
+    text-align: center;
+    font-size: xx-large;
+    color: #fff;
+    margin-top: 10%;
+}
+
+form {
+    width: 70%;
+    height: 630px;
+    padding: 50px 30px 20px;
+    background: #fff;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: 15%;
+}
+
+form i {
+    color: darkblue;
+    font-size: xx-large;
+    margin-left: 47%;
+    margin-bottom: 2%;
+}
+
+.form-input {
+    width: 20%;
+    margin-left: 40%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#form-submit-btn {
+    margin-left: 40%;
+    background-color: goldenrod;
+    border-radius: 10px;
+    font-size: x-large;
+    margin-top: 25px;
+}
+
+#form-submit-btn:hover {
+    background-color: darkblue;
+    color: #fff;
+}
+
+.form-error {
+    color: red;
+}
+
+#submit-error {
+    color: red;
+    font-size: larger;
+}
+
+/*Styles the footer with social icons*/
+footer {
+    text-align: center;
+}
+
+.social_icons {
+    float: right;
+}
+
+.social_icons i {
+    font-size: 3rem;
+    letter-spacing: 1em;
+    color: #fff;
+}
+
+.social_icons i:hover {
+    color: lightgreen;
+}
+
+footer h2 {
+    float: left;
+    color: #fff;
+    margin-left: 50px;
+}
+
+
+/* Media queries for different screen sizes */
+
+/*Styles for screens of max-width: 1024px */
+@media screen and (max-width: 1024px) {
+    .home-image {
+        margin-right: 300px;
+        margin-bottom: 50px;
+    }
+
+    .youtube-video {
+        margin-left: 220px;
+    }
+    #advice {
+        height: 300px;
+    }
+    #quote-output {
+        height: 35%;
+    }
+
+    #make-the-list {
+        margin-left: 30%;
+    }
+    .list-image img {
+        margin-left: 230px;
+    }
+    #input-task {
+        width: 200px;
+    }
+    form {
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+
+/*Styles for screens of max-width: 912px */
+@media screen and (max-width: 912px) {
+    .logo {
+        width: 200px;
+    }
+    .home-image {
+        margin-right: 275px;
+        margin-bottom: 50px;
+    }
+
+    .youtube-video {
+        margin-left: 150px;
+    }
+    #advice {
+        height: 400px;
+    }
+    #stressed-image {
+        margin-top: 75px;
+    }
+    #quote-btn {
+        width: 35%;
+    }
+
+    #quote-output {
+        height: 40%;
+    }
+    #make-the-list {
+        margin-left: 28%;
+    }
+    .contact p {
+        height: 340px;
+    }
+    #contact-image {
+        margin-top: 110px;
+    }
+}
+
+/*Styles for screens of max-width: 820px */
+@media screen and (max-width: 820px) {
+    .logo {
+        width: 200px;
+    }
+    .home-image {
+        margin-right: 250px;
+        margin-bottom: 50px;
+    }
+
+    .youtube-video {
+        margin-left: 130px;
+    }
+
+    #advice {
+        height: 400px;
+    }
+
+    #make-the-list {
+        margin-left: 25%;
+    }
+
+    #input-task {
+        width: 200px;
+    }
+
+    .list-image {
+        margin-right: 400px;
+    }
+    .contact p {
+        height: 400px;
+    }
+
+    #quote-btn {
+        width: 30%;
+    }
+    #quote-output {
+        height: 35%;
+    }
+    #stressed-image {
+        margin-top: 75px;
+    }
+
+    .list-image img {
+        width: 400px;
+        margin-left: 200px;
+    }
+
+    #contact-image {
+        margin-top: 135px;
+    }
+    form {
+        margin-left: 30%;
+    }
+
+    /*Styles for screens of max-width: 768px */
+    @media screen and (max-width: 768px) {
+        .home-image {
+            margin-right: 200px;
+        }
+        .youtube-video {
+            margin-left: 100px;
+        }
+        #advice {
+            height: 450px;
+        }
+        #stressed-image {
+            margin-top: 100px;
+        }
+        .random-quotes {
+            height: 330px;
+        }
+        #quote-btn {
+            width: 35%;
+        }
+        #quote-output {
+            height: 45%;
+        }
+        .list-image img {
+            margin-left: 175px;
+        }
+        .contact p {
+            height: 450px;
+        }
+        #contact-image {
+            margin-top: 160px;
+        }
+    }
+
+    /*Styles for screens of max-width: 540px */
+    @media screen and (max-width: 540px) {
+        .logo {
+            width: 100px;
+        }
+        header h1 {
+            font-size: xx-large;
+            margin-left: 50px;
+        }
+        nav a {
+            display: block;
+        }
+
+        .home-image {
+            margin-right: 150px;
+        }
+
+        .youtube-video {
+            margin-left: 0.1px;
+        }
+        .contact p {
+            margin-left: 125px;
+            width: 300px;
+            height: 330px;
+        }
+        #contact-image {
+            margin-top: 25px;
+            margin-right: 175px;
+            margin-bottom: 80px;
+            height: 200px;
+        }
+        footer h2 {
+            float: none;
+            text-align: center;
+        }
+        .social_icons {
+            margin-right: 40px;
+        }
+        #my-journey {
+            margin-top: 30px;
+        }
+        #advice {
+            width: 220px;
+            margin-left: 150px;
+        }
+        #stressed-image {
+            height: 180px;
+            float: none;
+            margin-left: 175px;
+            margin-top: 20px;
+        }
+        .random-quotes {
+            width: 300px;
+            margin-left: 130px;
+        }
+        .h1-list {
+            padding-top: 1px;
+            text-align: center;
+        }
+        #make-the-list {
+            margin-left: 15%;
+        }
+
+        .to-do-list {
+            width: 400px;
+        }
+        #input-task {
+            width: 70px;
+        }
+        .add-task-btn {
+            width: 10px;
+        }
+        .list-image img {
+            margin-left: 65px;
+        }
+    }
+    form {
+        width: 350px;
+        margin-left: none;
+    }
+
+        /*Styles for screens of max-width: 414px */
+    @media screen and (max-width: 414px) {
+        header h1 {
+            margin-left: 10px;
+        }
+        .home-image {
+            width: 300px;
+            height: 200px;
+            margin-left: 50px;
+            float: none;
+        }
+    
+        .youtube-video {
+            margin-left: 0;
+        }
+        .youtube-video iframe {
+            width: 100%;
+            height: 200px;
+        }
+        #advice {
+            float: none;
+            margin-left: 100px;
+        }
+        #stressed-image {
+            float: none;
+            width: 200px;
+            margin: 0 auto;
+            margin-left: 100px;
+        }
+        #make-the-list {
+            width: 300px;
+            height: 300px;
+        }
+        .list-image img {
+            width: 300px;
+            height: 400px;
+            margin-left: 50px;
+        }
+        .random-quotes {
+            width: 300px;
+            margin: 0 auto;
+        }
+        .contact p {
+            margin-left: 75px;
+        }
+        #contact-image {
+            float: none;
+            margin-left: 150px;
+        }
+        form {
+            width: 80%;
+            margin: 0 auto;
+        }
+        footer {
+            align-items: center;
+        }
+        .social_icons i {
+            font-size: 2.5rem;
+            letter-spacing: none;
+        }
+    }
+
+    /*Styles for screens of max-width: 375px */
+    @media screen and (max-width: 375px) {
+        .contact p {
+            margin-left: 27px;
+        }
+        #contact-image {
+            float: none;
+            margin-left: 60px;
+            width: 200px;
+        }
+
+        form {
+            width: 90%;
+            margin: 0 auto;
+        }
+        footer {
+            align-items: center;
+        }
+        .social_icons i {
+            font-size: 2rem;
+            letter-spacing: none;
+        }
+    }
+
+    /*Styles for screens of max-width: 280px */
+    @media screen and (max-width: 280px) {
+        nav {
+            font-weight: bolder;
+            text-indent: 0.1em;
+            margin-top: 50px;
+            margin-bottom: 5px;
+            margin-left: 80px;
+        }
+        .home-image {
+            width: 200px;
+            height: 200px;
+            margin-left: 25px;
+            float: none;
+        }
+        #advice {
+            float: none;
+            margin-left: 30px;
+        }
+        #stressed-image {
+            float: none;
+            width: 200px;
+            margin: 0 auto;
+            margin-left: 25px;
+        }
+        .random-quotes {
+            width: 250px;
+            margin: 0 auto;
+        }
+        #make-the-list {
+            width: 200px;
+            height: 350px;
+        }
+        .to-do-list {
+            width: 250px;
+            margin: 0 auto;
+        }
+        .add-task-btn {
+            width: 5px;
+        }
+        .list-image img {
+            width: 200px;
+            height: 400px;
+            margin-left: 30px;
+        }
+        .contact p {
+            margin: 0 auto;
+            width: 250px;
+            height: 400px;
+        }
+        #contact-image {
+            float: none;
+            margin-left: 20px;
+            width: 200px;
+        }
+        form {
+            width: 250px;
+            margin: 0 auto;
+        }
+        .form-input {
+            width: 20%;
+            margin-left: 10%;
+        }
+        footer {
+            align-items: center;
+        }
+        .social_icons i {
+            font-size: 1.5rem;
+            letter-spacing: none;
+        }
+    }
+}
+
+

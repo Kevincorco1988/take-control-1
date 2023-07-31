@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Contains title, meta tags style sheet link and font awesome script -->
+    <title>Take Control</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Motivational website to push people to take control of their lives and become more confident">
+    <meta name="keywords" content="Take Control, a simple website for people who need motivation to become more organised">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a90370d8ae.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Contains all elements within the body within a container -->
+    <div class="container">
+        <!-- Contains the logo, page heading and navaigation -->
+        <div class="header">
+            <header>
+                <img class="logo" src="images/logo.png" alt="logo">
+                <h1>Take Control</h1>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="list.html">To-Do</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </header>
+        </div>
+        <!-- The main section with some advice, to-do list and image -->
+        <main>
+            <h1 class="h1-list">Make your plans official....make a list</h1>
+            <p id="make-the-list">
+                Putting pen to paper or fingers to keys shows you<br>
+                what your goals are. A gentle reminder or push<br>
+                in the right direction. <i class="fa-solid fa-trophy"></i>
+            </p>
+
+            <div class="to-do-list">
+                <h2>To-Do List <i class="fa-solid fa-list-check"></i></h2>
+
+                <div class="list-row">
+                    <input type="text" id="input-task" placeholder="Add a task">
+                    <button class="add-task-btn" onclick="addTask()">Add Task</button>
+                </div>
+                <div>
+                    <ul id="list-container">
+                       <!-- <li class="completed-task">Task 1</li>
+                        <li>Task 2</li>
+                        <li>Task 3</li>
+                        <li>Task 4</li>
+                        <li>Task 5</li> -->
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <div class="list-image">
+            <img src="images/list.jpg" alt="list-image">
+        </div>
+
+        <div>
+            <!-- The footer of the page with the copyright symbol, social media links and list.js script -->
+            <footer>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h2>Copyright &copy; 2023</h2>
+                <div class="social_icons">
+                    <a href="https://facebook.com " target="blank" rel="noopener" 
+                      aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="blank" rel="noopener" 
+                      aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://www.twitter.com/" target="blank" rel="noopener" 
+                      aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/" target="blank" rel="noopener" 
+                      aria-label="Visit our Youtube page (opens in a new tab)"><i class="fab fa-youtube"></i></a>
+                  </div>
+            </footer>
+        </div>
+    </div>
+    <script src="list.js"></script>
+</body>
+</html>

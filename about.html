@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Contains title, meta tags style sheet link and font awesome script -->
+    <title>Take Control</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Motivational website to push people to take control of their lives and become more confident">
+    <meta name="keywords" content="Take Control, a simple website for people who need motivation to become more organised">
+    <title>Take Control</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a90370d8ae.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Contains all elements within the body within a container -->
+    <div class="container">
+        <!-- Contains the logo, page heading and navaigation -->
+        <div class="header">
+            <header>
+                <img class="logo" src="images/logo.png" alt="logo">
+                <h1>Take Control</h1>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="list.html">To-Do</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </header>
+        </div>
+        <!-- Main part of the page contains motivational advice  -->
+        <main>
+            <div>
+                <h1 id="my-journey">No journey starts easy but if it was easy,<br>it wouldn't be worth the trip!</h1>
+                <p id="advice">If you're like me, the stress of life can be overwhelming.<br>
+                    However, simple organisation and beating procrastination is the key.<br>
+                    It's very easy to say I'll do it tomorrow but it's even easier<br>
+                    to repeat yourself and soon tomorrow becomes everyday.<br>
+                    Take inspiration from others and become your own inspiration.<br>
+                    If I can do it, anyone can!
+                </p>
+                <img id="stressed-image" src="images/stress.jpg" alt="stress-pic">
+            </div>
+        </main>
+        <!-- Contains the inpirational quotes generator  -->
+        <h1 class="quotes">Inspirational quotes generator</h1>
+        <div class="random-quotes">
+            <button id="quote-btn">NEW QUOTE</button>
+            <div id="quote-output">Press for new quote!</div>
+        </div>
+
+        <div>
+            <!-- The footer of the page with the copyright symbol, social media links and quote.js script -->
+            <footer>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h2>Copyright &copy; 2023</h2>
+                <div class="social_icons">
+                    <a href="https://facebook.com " target="blank" rel="noopener" 
+                      aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="blank" rel="noopener" 
+                      aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://www.twitter.com/" target="blank" rel="noopener" 
+                      aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/" target="blank" rel="noopener" 
+                      aria-label="Visit our Youtube page (opens in a new tab)"><i class="fab fa-youtube"></i></a>
+                  </div>
+            </footer>
+        </div>
+    </div>
+    <script src="quote.js"></script>
+</body>
+</html>
